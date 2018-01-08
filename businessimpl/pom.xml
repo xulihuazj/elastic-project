@@ -16,6 +16,26 @@
         </dependency>
 
         <dependency>
+            <groupId>com.xulihuazj</groupId>
+            <artifactId>module</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.xulihuazj</groupId>
+            <artifactId>repository</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.xulihuazj</groupId>
+            <artifactId>repository-impl</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.xulihuazj</groupId>
+            <artifactId>utils</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>org.elasticsearch</groupId>
             <artifactId>elasticsearch</artifactId>
         </dependency>

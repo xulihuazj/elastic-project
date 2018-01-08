@@ -7,6 +7,7 @@
 package com.xulihuazj.repositoryimpl;
 
 import com.xulihuazj.repository.UserRepository;
+import org.springframework.stereotype.Repository;
 
 /**
  * @Description:

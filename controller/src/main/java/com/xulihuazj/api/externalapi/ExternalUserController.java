@@ -6,6 +6,7 @@
  */
 package com.xulihuazj.api.externalapi;
 
+import com.xulihuazj.boot.apihandler.APIConverterRequest;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -35,6 +36,7 @@ public class ExternalUserController {
     public void externalUserLogin(){
 
     }
+
 
 
 }

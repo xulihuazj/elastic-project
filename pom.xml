@@ -146,7 +146,6 @@
             </dependency>
 
 
-
             <!-- HttpClient -->
             <dependency>
                 <groupId>commons-httpclient</groupId>
@@ -218,7 +217,7 @@
             </dependency>
 
             <!--MongoDB依赖-->
-                       <dependency>
+            <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-data-mongodb</artifactId>
                 <version>1.5.2.RELEASE</version>
@@ -230,7 +229,6 @@
                 <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
                 <version>1.5.2.RELEASE</version>
             </dependency>
-
 
             <dependency>
                 <groupId>org.elasticsearch</groupId>
@@ -293,6 +291,12 @@
             </plugin>
         </plugins>
     </build>
+
+    <scm>
+        <url>https://github.com/wxpay/WXPay-SDK-Java</url>
+        <connection>git@github.com:wxpay/WXPay-SDK-Java.git</connection>
+        <developerConnection>https://github.com/wxpay/WXPay-SDK-Java</developerConnection>
+    </scm>
 
     <!-- Add Spring repositories -->
     <!-- (you don't need this if you are using a .RELEASE version) -->

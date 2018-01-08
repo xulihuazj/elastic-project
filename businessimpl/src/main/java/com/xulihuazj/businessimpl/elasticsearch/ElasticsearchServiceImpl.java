@@ -4,9 +4,9 @@
  * history :
  *     1. 2018/1/7  20:43 created by xulihua
  */
-package com.xulihuazj.businessimpl;
+package com.xulihuazj.businessimpl.elasticsearch;
 
-import com.xulihuazj.business.ElasticsearchService;
+import com.xulihuazj.business.elasticsearch.ElasticsearchService;
 import org.elasticsearch.action.bulk.BulkItemResponse;
 import org.elasticsearch.action.bulk.BulkRequestBuilder;
 import org.elasticsearch.action.bulk.BulkResponse;
@@ -285,8 +285,8 @@ public class ElasticsearchServiceImpl implements ElasticsearchService {
 
     }
 
-    private void aa() {
-
+    //disMaxQuery
+    private void disMaxQueryApiTest() {
         //disMaxQuery
         TransportClient client = needTransportClient();
         QueryBuilder disMaxQueryBuilder = QueryBuilders.disMaxQuery()
@@ -295,7 +295,6 @@ public class ElasticsearchServiceImpl implements ElasticsearchService {
         SearchResponse searchResponse = client.prepareSearch("my_index").setTypes("my_type")
                 .setQuery(disMaxQueryBuilder)
                 .get();
-
     }
 
 

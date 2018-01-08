@@ -1,4 +1,4 @@
-package com.xulihuazj.business;
+package com.xulihuazj.business.elasticsearch;
 
 import org.elasticsearch.action.index.IndexRequest;
 

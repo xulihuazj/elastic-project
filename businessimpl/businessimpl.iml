@@ -12,6 +12,10 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="business" />
+    <orderEntry type="library" name="Maven: com.xulihuazj:module:unknown" level="project" />
+    <orderEntry type="module" module-name="repository" />
+    <orderEntry type="library" name="Maven: com.xulihuazj:repository-impl:unknown" level="project" />
+    <orderEntry type="module" module-name="utils" />
     <orderEntry type="library" name="Maven: org.elasticsearch:elasticsearch:5.5.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.lucene:lucene-core:6.6.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.lucene:lucene-analyzers-common:6.6.0" level="project" />
@@ -64,5 +68,7 @@
     <orderEntry type="library" name="Maven: com.github.spullara.mustache.java:compiler:0.9.3" level="project" />
     <orderEntry type="library" name="Maven: org.elasticsearch.plugin:percolator-client:5.5.0" level="project" />
     <orderEntry type="library" name="Maven: org.elasticsearch.plugin:parent-join-client:5.5.0" level="project" />
+    <orderEntry type="library" name="Maven: org.locationtech.spatial4j:spatial4j:0.6" level="project" />
+    <orderEntry type="library" name="Maven: com.vividsolutions:jts:1.13" level="project" />
   </component>
 </module>
