@@ -6,7 +6,11 @@
  */
 package com.xulihuazj.business.mq;
 
+
+import javax.jms.Destination;
+
 public interface ActiveMqConsumerService {
 
+    String receiveMessage(Destination destination, Destination replyDestination);
 
 }

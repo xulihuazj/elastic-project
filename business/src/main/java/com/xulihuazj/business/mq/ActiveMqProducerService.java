@@ -8,6 +8,8 @@ package com.xulihuazj.business.mq;
 
 import org.springframework.boot.CommandLineRunner;
 
+import javax.jms.Destination;
+
 public interface ActiveMqProducerService extends CommandLineRunner {
 
     /**
@@ -18,5 +20,8 @@ public interface ActiveMqProducerService extends CommandLineRunner {
      * @date 2018/01/08 18:36
      */
     void send(String msg);
+
+
+    void sendMessage(Destination destination, final String message);
 
 }

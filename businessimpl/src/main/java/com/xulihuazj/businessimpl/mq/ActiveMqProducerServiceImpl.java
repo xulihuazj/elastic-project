@@ -8,12 +8,17 @@ package com.xulihuazj.businessimpl.mq;
 
 import com.xulihuazj.business.mq.ActiveMqProducerService;
 import com.xulihuazj.log.LogHelper;
+import org.apache.activemq.Message;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.core.JmsMessagingTemplate;
+import org.springframework.jms.core.JmsTemplate;
+import org.springframework.jms.core.MessageCreator;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
+import javax.jms.Destination;
 import javax.jms.Queue;
 
 @Service
@@ -23,6 +28,13 @@ public class ActiveMqProducerServiceImpl implements ActiveMqProducerService {
 
     @Autowired
     private JmsMessagingTemplate jmsMessagingTemplate;
+
+
+    /**
+     * 注入JmsTemplate
+     */
+    @Resource(name = "jmsTemplate")
+    private JmsTemplate jTemplate;
 
     @Autowired
     private Queue logQueue;
@@ -36,6 +48,13 @@ public class ActiveMqProducerServiceImpl implements ActiveMqProducerService {
     @Override
     public void send(String msg) {
         this.jmsMessagingTemplate.convertAndSend(this.logQueue, msg);
+    }
+
+    @Override
+    public void sendMessage(Destination receivedestination, String message) {
+        System.out.println("================生产者创建了一条消息==============");
+        jTemplate.send(receivedestination, session -> session.createTextMessage("hello activeMQ:" + message));
+        LogHelper.info(logger, "生产者创建了一条消息,消息是：{0}", message);
     }
 
 }
