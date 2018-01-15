@@ -316,6 +316,26 @@
                 <version>2.0</version>
             </dependency>
 
+            <!-- 时间工具类 -->
+            <dependency>
+                <groupId>joda-time</groupId>
+                <artifactId>joda-time</artifactId>
+                <version>2.9.1</version>
+            </dependency>
+
+            <!-- Java文档格式转换开发库 -->
+            <dependency>
+                <groupId>com.documents4j</groupId>
+                <artifactId>documents4j-api</artifactId>
+                <version>1.0.3</version>
+            </dependency>
+
+            <!-- quartz定时任务开发库 -->
+            <dependency>
+                <groupId>org.quartz-scheduler</groupId>
+                <artifactId>quartz</artifactId>
+                <version>2.3.0</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>
