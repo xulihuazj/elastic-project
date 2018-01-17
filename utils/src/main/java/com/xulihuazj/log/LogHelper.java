@@ -66,6 +66,21 @@ public class LogHelper {
     }
 
     /**
+     * 输出error日志
+     *
+     * @param logger   logger
+     * @param template 模板
+     * @param params   可变参数
+     * @author 徐礼华
+     * @date 2018/01/08 18:27
+     */
+    public static void error(final Logger logger, String template, Object... params) {
+        if (logger.isInfoEnabled()) {
+            logger.error(getMessage(template, params));
+        }
+    }
+
+    /**
      * 输出exception日志，并打印异常
      *
      * @param logger   logger

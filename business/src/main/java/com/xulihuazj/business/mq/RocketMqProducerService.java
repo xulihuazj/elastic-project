@@ -6,5 +6,15 @@
  */
 package com.xulihuazj.business.mq;
 
+/**
+ * 消息生产者，负责产生消息，一般由业务系统负责产生消息
+ */
 public interface RocketMqProducerService {
+
+    /**
+     * RocketMq发送消息
+     * @author 徐礼华  
+     * @date   2018/01/16 18:02
+     */
+    void producerSendMessage();
 }

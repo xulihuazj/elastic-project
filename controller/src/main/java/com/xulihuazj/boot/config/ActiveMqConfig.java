@@ -6,7 +6,6 @@
  */
 package com.xulihuazj.boot.config;
 
-import javafx.beans.NamedArg;
 import org.apache.activemq.command.ActiveMQQueue;
 import org.apache.activemq.jms.pool.PooledConnectionFactory;
 import org.apache.activemq.spring.ActiveMQConnectionFactory;
@@ -14,7 +13,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jms.connection.SingleConnectionFactory;
 import org.springframework.jms.core.JmsTemplate;
-
 import javax.annotation.Resource;
 import javax.jms.Queue;
 

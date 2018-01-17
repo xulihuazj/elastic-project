@@ -6,5 +6,12 @@
  */
 package com.xulihuazj.business.mq;
 
+/**
+ * 消息消费者，负责消费消息，一般是后台系统负责异步消费
+ */
 public interface RocketMqConsumerService {
+
+
+
+
 }

@@ -19,6 +19,11 @@
 
         <dependency>
             <groupId>com.xulihuazj</groupId>
+            <artifactId>utils</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.xulihuazj</groupId>
             <artifactId>api-facade</artifactId>
         </dependency>
 
@@ -123,11 +128,6 @@
         </dependency>
 
         <dependency>
-            <groupId>com.cf.global</groupId>
-            <artifactId>business-core</artifactId>
-        </dependency>
-
-        <dependency>
             <groupId>net.sf.ehcache</groupId>
             <artifactId>ehcache</artifactId>
         </dependency>
@@ -146,6 +146,13 @@
             <groupId>org.apache.activemq</groupId>
             <artifactId>activemq-client</artifactId>
         </dependency>
+
+        <!-- RocketMQ消息队列开发库-->
+        <dependency>
+            <groupId>com.alibaba.rocketmq</groupId>
+            <artifactId>rocketmq-client</artifactId>
+        </dependency>
+
 
 
     </dependencies>

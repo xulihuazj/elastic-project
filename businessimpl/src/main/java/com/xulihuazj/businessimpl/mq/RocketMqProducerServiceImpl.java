@@ -6,7 +6,41 @@
  */
 package com.xulihuazj.businessimpl.mq;
 
+import com.alibaba.rocketmq.client.exception.MQBrokerException;
+import com.alibaba.rocketmq.client.exception.MQClientException;
+import com.alibaba.rocketmq.client.producer.DefaultMQProducer;
+import com.alibaba.rocketmq.client.producer.SendResult;
+import com.alibaba.rocketmq.common.message.Message;
+import com.alibaba.rocketmq.common.message.MessageExt;
+import com.alibaba.rocketmq.remoting.exception.RemotingException;
 import com.xulihuazj.business.mq.RocketMqProducerService;
+import com.xulihuazj.log.LogHelper;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-public class RocketMqProducerServiceImpl implements RocketMqProducerService{
+import javax.annotation.Resource;
+import java.util.UUID;
+
+public class RocketMqProducerServiceImpl implements RocketMqProducerService {
+
+    private Logger logger = LogManager.getLogger(RocketMqProducerServiceImpl.class);
+
+    @Resource
+    private DefaultMQProducer defaultMQProducer;
+
+    @Override
+    public void producerSendMessage() {
+        try {
+            Message message = new Message("TEST",// topic
+                    "TEST",// tag
+                    UUID.randomUUID().toString(),//key用于标识业务的唯一性
+                    ("Hello RocketMQ !!!!!!!!!!").getBytes()// body 二进制字节数组
+            );
+            SendResult result = defaultMQProducer.send(message);
+            LogHelper.info(logger, "结果：{0}", result);
+        } catch (MQClientException | RemotingException | MQBrokerException | InterruptedException e) {
+            LogHelper.exception(logger, e, "RocketMq创建消息失败", e);
+            e.printStackTrace();
+        }
+    }
 }

@@ -6,7 +6,19 @@
  */
 package com.xulihuazj.businessimpl.mq;
 
+import com.alibaba.rocketmq.client.consumer.DefaultMQPushConsumer;
 import com.xulihuazj.business.mq.RocketMqConsumerService;
 
+import javax.annotation.Resource;
+
 public class RocketMqConsumerServiceImpl implements RocketMqConsumerService {
+
+
+    @Resource
+    private DefaultMQPushConsumer defaultMQPushConsumer;
+
+    public void getMessage(){
+        defaultMQPushConsumer.getme
+    }
+
 }

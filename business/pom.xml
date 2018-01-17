@@ -56,6 +56,12 @@
             <artifactId>commons-pool2</artifactId>
         </dependency>
 
+        <!-- RocketMQ消息队列开发库-->
+        <dependency>
+            <groupId>com.alibaba.rocketmq</groupId>
+            <artifactId>rocketmq-client</artifactId>
+        </dependency>
+
     </dependencies>
 
 
