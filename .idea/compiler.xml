@@ -12,20 +12,18 @@
         <module name="controller" />
         <module name="model" />
         <module name="repository" />
-        <module name="repositoryimpl" />
+        <module name="repository-impl" />
         <module name="utils" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="api" target="1.5" />
       <module name="apifacade" target="1.8" />
       <module name="business" target="1.8" />
       <module name="businessimpl" target="1.8" />
       <module name="controller" target="1.8" />
-      <module name="data" target="1.8" />
-      <module name="elastic-api" target="1.8" />
       <module name="model" target="1.8" />
       <module name="repository" target="1.8" />
+      <module name="repository-impl" target="1.8" />
       <module name="repositoryimpl" target="1.8" />
       <module name="utils" target="1.8" />
     </bytecodeTargetLevel>

@@ -6,9 +6,9 @@
  */
 package com.xulihuazj.log;
 
-import java.text.MessageFormat;
-
 import org.apache.logging.log4j.Logger;
+
+import java.text.MessageFormat;
 
 public class LogHelper {
 
