@@ -4,11 +4,10 @@
  * history :
  *     1. 2018/01/08  17:49 created by xulihua
  */
-package com.xulihuazj.businessimpl.mq;
+package com.xulihuazj.businessimpl.activemq;
 
 import com.xulihuazj.business.mq.ActiveMqProducerService;
 import com.xulihuazj.log.LogHelper;
-import org.apache.activemq.Message;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;

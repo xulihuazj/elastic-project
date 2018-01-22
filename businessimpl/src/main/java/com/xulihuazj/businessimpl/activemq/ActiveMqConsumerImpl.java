@@ -4,7 +4,7 @@
  * history :
  *     1. 2018/01/08  17:52 created by xulihua
  */
-package com.xulihuazj.businessimpl.mq;
+package com.xulihuazj.businessimpl.activemq;
 
 import com.xulihuazj.business.mq.ActiveMqConsumerService;
 import com.xulihuazj.log.LogHelper;

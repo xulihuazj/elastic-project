@@ -4,10 +4,10 @@
  * history :
  *     1. 2018/01/16  14:07 created by xulihua
  */
-package com.xulihuazj.businessimpl.mq;
+package com.xulihuazj.businessimpl.rocketmq;
 
 import com.alibaba.rocketmq.client.consumer.DefaultMQPushConsumer;
-import com.xulihuazj.business.mq.RocketMqConsumerService;
+import com.xulihuazj.business.rocketmq.RocketMqConsumerService;
 
 import javax.annotation.Resource;
 
@@ -18,7 +18,7 @@ public class RocketMqConsumerServiceImpl implements RocketMqConsumerService {
     private DefaultMQPushConsumer defaultMQPushConsumer;
 
     public void getMessage(){
-        defaultMQPushConsumer.getme
+        //defaultMQPushConsumer.get
     }
 
 }

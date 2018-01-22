@@ -10,7 +10,7 @@ import com.alibaba.rocketmq.client.consumer.listener.ConsumeConcurrentlyContext;
 import com.alibaba.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;
 import com.alibaba.rocketmq.client.consumer.listener.MessageListenerConcurrently;
 import com.alibaba.rocketmq.common.message.MessageExt;
-import com.xulihuazj.business.mq.MessageProcessor;
+import com.xulihuazj.business.rocketmq.MessageProcessor;
 
 import java.util.List;
 
