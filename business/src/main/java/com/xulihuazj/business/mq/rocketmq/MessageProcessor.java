@@ -4,7 +4,7 @@
  * history :
  *     1. 2018/01/16  18:37 created by xulihua
  */
-package com.xulihuazj.business.rocketmq;
+package com.xulihuazj.business.mq.rocketmq;
 
 import com.alibaba.rocketmq.common.message.MessageExt;
 

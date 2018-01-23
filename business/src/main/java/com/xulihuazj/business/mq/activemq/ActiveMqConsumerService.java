@@ -4,7 +4,7 @@
  * history :
  *     1. 2018/01/08  18:33 created by xulihua
  */
-package com.xulihuazj.business.mq;
+package com.xulihuazj.business.mq.activemq;
 
 
 import javax.jms.Destination;

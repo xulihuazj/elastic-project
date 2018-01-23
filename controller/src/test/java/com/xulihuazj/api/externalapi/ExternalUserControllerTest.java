@@ -4,7 +4,7 @@
  * history :
  *     1. 2017/12/17  22:28 created by xulihua
  */
-package com.xulihuazj.api;
+package com.xulihuazj.api.externalapi;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -16,16 +16,9 @@ import javax.swing.*;
  * @date: 2017/12/17 22:28
  */
 
-@RunWith(SpringJunit4ClassRunner.class)
-@SpringApplicationConfiguration(classes= SampleDataJpaApplication.class)
-//为@WebIntegrationTest添加环境变量属性来改变应用服务器端口号
-@WebIntegrationTest({"server.port=0", "management.port=0"})
-
 public class ExternalUserControllerTest {
 
 
-    @Autowired
-    private UserRepository userRepositoryImpl;
 
 
 

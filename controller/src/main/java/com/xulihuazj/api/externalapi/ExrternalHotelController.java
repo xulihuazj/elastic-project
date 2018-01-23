@@ -9,7 +9,7 @@ package com.xulihuazj.api.externalapi;
 
 import com.xulihuazj.boot.apihandler.APIConverterRequest;
 import com.xulihuazj.business.hotel.HotelService;
-import com.xulihuazj.business.mq.ActiveMqProducerService;
+import com.xulihuazj.business.mq.activemq.ActiveMqProducerService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang3.StringUtils;

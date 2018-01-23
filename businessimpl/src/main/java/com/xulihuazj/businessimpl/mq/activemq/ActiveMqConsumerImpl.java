@@ -4,9 +4,9 @@
  * history :
  *     1. 2018/01/08  17:52 created by xulihua
  */
-package com.xulihuazj.businessimpl.activemq;
+package com.xulihuazj.businessimpl.mq.activemq;
 
-import com.xulihuazj.business.mq.ActiveMqConsumerService;
+import com.xulihuazj.business.mq.activemq.ActiveMqConsumerService;
 import com.xulihuazj.log.LogHelper;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

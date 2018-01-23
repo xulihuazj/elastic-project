@@ -13,10 +13,20 @@
 
     <dependencies>
 
-      <!--  <dependency>
+        <dependency>
+            <groupId>com.xulihuazj</groupId>
+            <artifactId>business-impl</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.xulihuazj</groupId>
+            <artifactId>model</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-        </dependency>-->
+            <artifactId> spring-context</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
@@ -42,6 +52,12 @@
             <artifactId>transport</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+        </dependency>
+
+
 
         <dependency>
             <groupId>javax.annotation</groupId>
@@ -60,6 +76,11 @@
         <dependency>
             <groupId>com.alibaba.rocketmq</groupId>
             <artifactId>rocketmq-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.xulihuazj</groupId>
+            <artifactId>module</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
 
     </dependencies>

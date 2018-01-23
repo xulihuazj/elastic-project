@@ -4,21 +4,23 @@
  * history :
  *     1. 2018/01/16  14:07 created by xulihua
  */
-package com.xulihuazj.businessimpl.rocketmq;
+package com.xulihuazj.businessimpl.mq.rokcetmq;
 
 import com.alibaba.rocketmq.client.consumer.DefaultMQPushConsumer;
-import com.xulihuazj.business.rocketmq.RocketMqConsumerService;
+import com.xulihuazj.business.mq.rocketmq.RocketMqConsumerService;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
+@Service
 public class RocketMqConsumerServiceImpl implements RocketMqConsumerService {
 
 
     @Resource
     private DefaultMQPushConsumer defaultMQPushConsumer;
 
-    public void getMessage(){
-        //defaultMQPushConsumer.get
+    public void getMessage() {
+        defaultMQPushConsumer.getAdjustThreadPoolNumsThreshold()
     }
 
 }

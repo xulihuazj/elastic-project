@@ -4,9 +4,9 @@
  * history :
  *     1. 2018/01/16  18:35 created by xulihua
  */
-package com.xulihuazj.businessimpl.rocketmq;
+package com.xulihuazj.businessimpl.mq.rokcetmq;
 import com.alibaba.rocketmq.common.message.MessageExt;
-import com.xulihuazj.business.rocketmq.MessageProcessor;
+import com.xulihuazj.business.mq.rocketmq.MessageProcessor;
 import org.springframework.stereotype.Component;
 
 @Component

@@ -4,20 +4,28 @@
  * history :
  *     1. 2018/01/08  17:44 created by xulihua
  */
-package com.xulihuazj.boot.config;
+package com.xulihuazj.boot.mq;
 
 import org.apache.activemq.command.ActiveMQQueue;
 import org.apache.activemq.jms.pool.PooledConnectionFactory;
 import org.apache.activemq.spring.ActiveMQConnectionFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jms.connection.SingleConnectionFactory;
 import org.springframework.jms.core.JmsTemplate;
+
 import javax.annotation.Resource;
 import javax.jms.Queue;
 
 @Configuration
+@ConditionalOnProperty(value = "activemq.config.enabled", havingValue = "true", matchIfMissing = true)
 public class ActiveMqConfig {
+
+    private final Logger logger = LogManager.getLogger(ActiveMqConfig.class);
 
     private final String brokerUrl = "tcp://localhost:61616";
 

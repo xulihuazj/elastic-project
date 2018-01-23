@@ -16,12 +16,14 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-jms:4.3.13.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.xulihuazj:business-impl:unknown" level="project" />
+    <orderEntry type="library" name="Maven: com.xulihuazj:model:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:4.3.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:4.3.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.3.7.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-context:4.3.7.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.3.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-core:4.3.7.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.3.7.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jms:4.3.13.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-messaging:4.3.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:4.3.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.apache.activemq:activemq-client:5.14.5" level="project" />
@@ -82,9 +84,11 @@
     <orderEntry type="library" name="Maven: com.github.spullara.mustache.java:compiler:0.9.3" level="project" />
     <orderEntry type="library" name="Maven: org.elasticsearch.plugin:percolator-client:5.5.0" level="project" />
     <orderEntry type="library" name="Maven: org.elasticsearch.plugin:parent-join-client:5.5.0" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.12" level="project" />
     <orderEntry type="library" name="Maven: javax.annotation:jsr250-api:1.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.activemq:activemq-all:5.13.3" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-pool2:2.0" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba.rocketmq:rocketmq-client:3.6.2.Final" level="project" />
+    <orderEntry type="module" module-name="model" />
   </component>
 </module>

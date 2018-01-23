@@ -4,7 +4,7 @@
  * history :
  *     1. 2018/01/16  14:05 created by xulihua
  */
-package com.xulihuazj.business.rocketmq;
+package com.xulihuazj.business.mq.rocketmq;
 
 /**
  * 消息消费者，负责消费消息，一般是后台系统负责异步消费
