@@ -9,6 +9,7 @@ package com.xulihuazj.businessimpl.redis;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;
 import com.xulihuazj.business.redis.CacheService;
+import com.xulihuazj.config.CacheConfigModel;
 import com.xulihuazj.date.CustomDateUtil;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

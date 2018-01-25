@@ -6,6 +6,11 @@
  */
 package com.xulihuazj.business.mq.rocketmq;
 
+import com.alibaba.rocketmq.client.producer.LocalTransactionExecuter;
+import com.alibaba.rocketmq.common.message.Message;
+
+import java.util.Map;
+
 /**
  * 消息生产者，负责产生消息，一般由业务系统负责产生消息
  */
@@ -17,4 +22,6 @@ public interface RocketMqProducerService {
      * @date   2018/01/16 18:02
      */
     void producerSendMessage();
+
+    void setTransanctionMessage(Message message, LocalTransactionExecuter localTransactionExecuter, Map<String, Object> map);
 }

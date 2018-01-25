@@ -20,7 +20,7 @@ public class RocketMqConsumerServiceImpl implements RocketMqConsumerService {
     private DefaultMQPushConsumer defaultMQPushConsumer;
 
     public void getMessage() {
-        defaultMQPushConsumer.getAdjustThreadPoolNumsThreshold()
+        defaultMQPushConsumer.getAdjustThreadPoolNumsThreshold();
     }
 
 }

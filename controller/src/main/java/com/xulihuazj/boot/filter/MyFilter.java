@@ -10,9 +10,9 @@ import javax.servlet.*;
 import java.io.IOException;
 
 /**
- * @Description:
- * @author: xulihua
- * @date: 2017/12/17 20:55
+ * @author xulihua
+ * @description
+ * @date 2017/12/17 20:55
  */
 public class MyFilter implements Filter {
 

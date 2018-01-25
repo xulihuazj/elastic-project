@@ -89,7 +89,7 @@ public class LogHelper {
      * @author 徐礼华
      * @date 2018/01/08 18:28
      */
-    public static void exception(final Logger logger, Exception ex, String template, Object... params) {
+    public static void exception(Throwable ex, final Logger logger, String template, Object... params) {
         logger.error(getMessage(template, params), ex);
     }
 

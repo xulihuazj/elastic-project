@@ -9,6 +9,7 @@ package com.xulihuazj.boot.mq;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
+import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.QueueingConsumer;
 import com.xulihuazj.log.LogHelper;
 import org.apache.logging.log4j.LogManager;
@@ -17,7 +18,6 @@ import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
 import org.springframework.amqp.core.FanoutExchange;
 import org.springframework.amqp.core.Queue;
-import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -159,7 +159,7 @@ public class RabbitMqConfig {
     @Bean
     @Resource
     public RabbitTemplate initRabbitTemplate(ConnectionFactory connectionFactory) {
-        RabbitTemplate rabbitTemplate = new RabbitTemplate(connectionFactory);
+        RabbitTemplate rabbitTemplate = new RabbitTemplate();
         rabbitTemplate.setExchange(exChange);
         rabbitTemplate.setEncoding("UTF-8");
         return rabbitTemplate;

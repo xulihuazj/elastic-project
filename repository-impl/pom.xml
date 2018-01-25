@@ -15,7 +15,15 @@
 
         <dependency>
             <groupId>com.xulihuazj</groupId>
-            <artifactId>repository</artifactId>
+            <artifactId>api-facade</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.xulihuazj</groupId>
+            <artifactId>model</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.xulihuazj</groupId>
+            <artifactId>utils</artifactId>
         </dependency>
 
         <dependency>

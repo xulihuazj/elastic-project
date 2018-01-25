@@ -6,5 +6,16 @@
  */
 package com.xulihuazj.business.user;
 
+import com.xulihuazj.request.UserLoginRequest;
+import com.xulihuazj.response.UserLoginResponse;
+
 public interface UserService {
+
+    /**
+     * 用户登录接口
+     *
+     * @param userLoginRequest request
+     * @return response
+     */
+    UserLoginResponse userLogin(UserLoginRequest userLoginRequest);
 }

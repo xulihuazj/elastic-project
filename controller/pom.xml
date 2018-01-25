@@ -11,20 +11,26 @@
 
     <artifactId>controller</artifactId>
     <dependencies>
-
         <dependency>
             <groupId>com.xulihuazj</groupId>
             <artifactId>business</artifactId>
         </dependency>
-
         <dependency>
             <groupId>com.xulihuazj</groupId>
             <artifactId>utils</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>com.xulihuazj</groupId>
+            <artifactId>model</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.xulihuazj</groupId>
             <artifactId>api-facade</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
         </dependency>
 
         <dependency>

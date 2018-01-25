@@ -15,7 +15,7 @@ import com.alibaba.rocketmq.client.producer.SendResult;
 import com.alibaba.rocketmq.client.producer.TransactionSendResult;
 import com.alibaba.rocketmq.common.message.Message;
 import com.alibaba.rocketmq.remoting.exception.RemotingException;
-import com.xulihuazj.business.rocketmq.RocketMqProducerService;
+import com.xulihuazj.business.mq.rocketmq.RocketMqProducerService;
 import com.xulihuazj.log.LogHelper;
 import net.sf.json.JSONObject;
 import org.apache.commons.collections.map.HashedMap;

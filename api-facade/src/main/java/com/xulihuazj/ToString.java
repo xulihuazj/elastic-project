@@ -6,6 +6,7 @@ package com.xulihuazj;/*
  */
 
 
+import lombok.Data;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
@@ -14,6 +15,7 @@ import java.io.Serializable;
 /**
  * 所有的模型都需要继承此类 便于日志打印及监控
  */
+@Data
 public class ToString implements Serializable {
 
     @Override

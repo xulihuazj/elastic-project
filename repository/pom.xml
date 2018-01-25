@@ -15,9 +15,8 @@
 
         <dependency>
             <groupId>com.xulihuazj</groupId>
-            <artifactId>repository-impl</artifactId>
+            <artifactId>model</artifactId>
         </dependency>
-
         <dependency>
             <groupId>com.xulihuazj</groupId>
             <artifactId>utils</artifactId>

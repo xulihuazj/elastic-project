@@ -28,12 +28,13 @@ public class HotelServiceImpl implements HotelService {
     // @Cacheable(value = "demo",key = "#aa")
     @Override
     public int selectListTest(String aa) {
-        long startTime = System.currentTimeMillis();
+      /*  long startTime = System.currentTimeMillis();
         //List<HotelInfoDO> hotelInfoDOS = hotelInfoDOMapper.searchListByHotelName(null);
         List<HotelImageDO> hotelImageDOList = hotelImageDOMapper.selectByHotelIdsAndStatus(null, null, aa);
         System.out.println(hotelImageDOList.size());
         LogHelper.info(logger, "最总时间：{0}", System.currentTimeMillis() - startTime);
-        return hotelImageDOList.size();
+        return hotelImageDOList.size();*/
+        return 0;
     }
 
 }

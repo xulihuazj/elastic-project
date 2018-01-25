@@ -7,6 +7,7 @@
 package com.xulihuazj.businessimpl.redis;
 
 import com.xulihuazj.business.redis.CacheService;
+import com.xulihuazj.config.CacheConfigModel;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
