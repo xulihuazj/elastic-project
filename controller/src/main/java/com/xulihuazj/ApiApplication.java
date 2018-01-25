@@ -6,11 +6,13 @@
  */
 package com.xulihuazj;
 
+import org.springframework.amqp.rabbit.annotation.EnableRabbit;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
@@ -19,10 +21,19 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  * @date: 2017/12/16 15:08
  */
 @SpringBootApplication
+//开启事务管理
 @EnableTransactionManagement
+//开启异步开发
 @EnableAsync
+//扫描
 @ComponentScan
 @Configuration
+//RabbitMQ
+@EnableRabbit
+//开启定时任务
+@EnableScheduling
+//多线程配置
+//@EnableReactor
 public class ApiApplication {
 
     public static void main(String[] args) {

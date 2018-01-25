@@ -26,7 +26,7 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-jms:4.3.13.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-messaging:4.3.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:4.3.7.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.activemq:activemq-client:5.14.5" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.activemq:activemq-client:5.14.3" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.24" level="project" />
     <orderEntry type="library" name="Maven: org.apache.geronimo.specs:geronimo-jms_1.1_spec:1.1.1" level="project" />
     <orderEntry type="library" name="Maven: org.fusesource.hawtbuf:hawtbuf:1.11" level="project" />
@@ -86,9 +86,10 @@
     <orderEntry type="library" name="Maven: org.elasticsearch.plugin:parent-join-client:5.5.0" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.12" level="project" />
     <orderEntry type="library" name="Maven: javax.annotation:jsr250-api:1.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.activemq:activemq-all:5.13.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.activemq:activemq-all:unknown" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-pool2:2.0" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba.rocketmq:rocketmq-client:3.6.2.Final" level="project" />
     <orderEntry type="module" module-name="model" />
+    <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.16.10" level="project" />
   </component>
 </module>

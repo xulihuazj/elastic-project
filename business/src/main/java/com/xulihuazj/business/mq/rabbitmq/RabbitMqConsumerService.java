@@ -8,5 +8,13 @@ package com.xulihuazj.business.mq.rabbitmq;
 
 public interface RabbitMqConsumerService {
 
+    /**
+     * 监听器监听指定的队列
+     * @param messageQueue
+     */
+    void messageListenerQueue(String messageQueue);
+
+    void messageListenerQueue(String queue,String messageQueue);
+
 
 }

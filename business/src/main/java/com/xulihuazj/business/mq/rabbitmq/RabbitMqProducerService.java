@@ -6,6 +6,8 @@
  */
 package com.xulihuazj.business.mq.rabbitmq;
 
+import com.xulihuazj.model.user.UserInfoModel;
+
 public interface RabbitMqProducerService {
 
     /**
@@ -14,4 +16,7 @@ public interface RabbitMqProducerService {
      * @param message 消息
      */
     void sendMessage(String message);
+
+
+    void sendMessage(UserInfoModel userInfoModel);
 }

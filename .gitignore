@@ -1,0 +1,25 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+.idea/*
+*.iml
+*.prefs
+*.project
+*/target/*
+*.settings
+/api-facade/*.project
+/api-facade/*.classpath
+*.project
+.gitignore.bak
+*.classpath
+*.gitignore
+*.classpath
+/business-impl/.settings
+/business/.settings
+/business/*.gitignore
+/data/.settings
+/model/.settings
+/api/*.gitignore

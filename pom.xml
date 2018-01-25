@@ -389,7 +389,7 @@
                 <version>4.3.13.RELEASE</version>
             </dependency>
             <!-- https://mvnrepository.com/artifact/org.apache.activemq/activemq-client -->
-            <dependency>
+       <!--     <dependency>
                 <groupId>org.apache.activemq</groupId>
                 <artifactId>activemq-client</artifactId>
                 <version>5.14.5</version>
@@ -398,8 +398,40 @@
                 <groupId>org.apache.activemq</groupId>
                 <artifactId>activemq-all</artifactId>
                 <version>5.13.3</version>
+            </dependency>-->
+
+            <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-activemq -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-activemq</artifactId>
+                <version>1.5.2.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.activemq</groupId>
+                <artifactId>activemq-pool</artifactId>
+                <version>5.14.5</version>
             </dependency>
 
+            <!-- lombok 注解开发库 -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.16.10</version>
+            </dependency>
+
+            <!-- DUBBO 开发库 -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>dubbo</artifactId>
+                <version>2.5.3</version>
+                <scope>provided</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
