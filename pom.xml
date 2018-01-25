@@ -290,11 +290,6 @@
                 <artifactId>transport</artifactId>
                 <version>5.5.0</version>
             </dependency>
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>fastjson</artifactId>
-                <version>1.2.12</version>
-            </dependency>
 
             <!-- Guava谷歌工具类开发库-->
             <dependency>
