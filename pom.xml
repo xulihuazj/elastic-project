@@ -9,12 +9,12 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>apifacade</module>
+        <module>api-facade</module>
         <module>model</module>
         <module>business</module>
-        <module>businessimpl</module>
+        <module>business-impl</module>
         <module>repository</module>
-        <module>repositoryimpl</module>
+        <module>repository-impl</module>
         <module>utils</module>
         <module>controller</module>
     </modules>
@@ -42,7 +42,7 @@
         <dependencies>
             <dependency>
                 <groupId>com.xulihuazj</groupId>
-                <artifactId>apifacade</artifactId>
+                <artifactId>api-facade</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
@@ -57,7 +57,7 @@
             </dependency>
             <dependency>
                 <groupId>com.xulihuazj</groupId>
-                <artifactId>businessimpl</artifactId>
+                <artifactId>business-impl</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
@@ -67,7 +67,7 @@
             </dependency>
             <dependency>
                 <groupId>com.xulihuazj</groupId>
-                <artifactId>repositoryimpl</artifactId>
+                <artifactId>repository-impl</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>

@@ -4,12 +4,15 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/businessimpl/pom.xml" />
+        <option value="$PROJECT_DIR$/repository-impl/pom.xml" />
+        <option value="$PROJECT_DIR$/api-facade/pom.xml" />
+        <option value="$PROJECT_DIR$/business-impl/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/repositoryimpl/pom.xml" />
       </set>
     </option>
   </component>
