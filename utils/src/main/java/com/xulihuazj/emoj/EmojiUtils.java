@@ -27,6 +27,8 @@ public class EmojiUtils {
 
     private static Logger logger = LogManager.getLogger(EmojiUtils.class);
 
+    private static final String DEFAULT_ENCODING_UTF8 = "UTF-8";
+
     /**
      * @param
      * @return 转换后字符串
@@ -42,7 +44,7 @@ public class EmojiUtils {
         StringBuffer stringBuffer = new StringBuffer();
         while (matcher.find()) {
             try {
-                matcher.appendReplacement(stringBuffer, "[<[" + URLEncoder.encode(matcher.group(1), Constant.DEFAULT_ENCODING_UTF8) + "]>]");
+                matcher.appendReplacement(stringBuffer, "[<[" + URLEncoder.encode(matcher.group(1), DEFAULT_ENCODING_UTF8) + "]>]");
             } catch (UnsupportedEncodingException e) {
                 LogHelper.exception(e, logger, "转换表情异常");
             }
@@ -66,7 +68,7 @@ public class EmojiUtils {
         StringBuffer stringBuffer = new StringBuffer();
         while (matcher.find()) {
             try {
-                matcher.appendReplacement(stringBuffer, URLDecoder.decode(matcher.group(1), Constant.DEFAULT_ENCODING_UTF8));
+                matcher.appendReplacement(stringBuffer, URLDecoder.decode(matcher.group(1), DEFAULT_ENCODING_UTF8));
             } catch (UnsupportedEncodingException e) {
                 LogHelper.exception(e, logger, "转换表情异常");
             }
