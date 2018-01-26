@@ -23,5 +23,5 @@ public interface RocketMqProducerService {
      */
     void producerSendMessage();
 
-    void setTransanctionMessage(Message message, LocalTransactionExecuter localTransactionExecuter, Map<String, Object> map);
+    void setTransactionMessage(Message message, LocalTransactionExecuter localTransactionExecuter, Map<String, Object> map);
 }

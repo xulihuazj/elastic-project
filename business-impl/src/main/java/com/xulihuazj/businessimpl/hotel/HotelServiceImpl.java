@@ -6,10 +6,10 @@
  */
 package com.xulihuazj.businessimpl.hotel;
 
+import com.mchange.io.FileUtils;
 import com.xulihuazj.business.hotel.HotelService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 public class HotelServiceImpl implements HotelService {
 
     /**
@@ -35,6 +35,9 @@ public class HotelServiceImpl implements HotelService {
         LogHelper.info(logger, "最总时间：{0}", System.currentTimeMillis() - startTime);
         return hotelImageDOList.size();*/
         return 0;
+    }
+
+    public static void main(String[] args){
     }
 
 }

@@ -148,14 +148,14 @@
         </dependency>
 
         <!-- ActiveMq 依赖-->
- <!--       <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-jms</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.activemq</groupId>
-            <artifactId>activemq-client</artifactId>
-        </dependency>-->
+        <!--       <dependency>
+                   <groupId>org.springframework</groupId>
+                   <artifactId>spring-jms</artifactId>
+               </dependency>
+               <dependency>
+                   <groupId>org.apache.activemq</groupId>
+                   <artifactId>activemq-client</artifactId>
+               </dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-activemq</artifactId>
@@ -165,14 +165,22 @@
             <artifactId>activemq-pool</artifactId>
         </dependency>
 
-
-
         <!-- RocketMQ消息队列开发库-->
         <dependency>
             <groupId>com.alibaba.rocketmq</groupId>
             <artifactId>rocketmq-client</artifactId>
         </dependency>
 
+        <!--junit4依赖-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+        <!--  Mockito 工具开发库 -->
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+        </dependency>
 
 
     </dependencies>

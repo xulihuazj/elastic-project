@@ -206,6 +206,13 @@
                 <artifactId>junit</artifactId>
                 <version>4.12</version>
             </dependency>
+            <!--  Mockito 工具开发库 -->
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-core</artifactId>
+                <version>2.7.19</version>
+                <scope>test</scope>
+            </dependency>
 
             <!--xss安全防范owasp依赖-->
             <dependency>
@@ -384,16 +391,16 @@
                 <version>4.3.13.RELEASE</version>
             </dependency>
             <!-- https://mvnrepository.com/artifact/org.apache.activemq/activemq-client -->
-       <!--     <dependency>
-                <groupId>org.apache.activemq</groupId>
-                <artifactId>activemq-client</artifactId>
-                <version>5.14.5</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.activemq</groupId>
-                <artifactId>activemq-all</artifactId>
-                <version>5.13.3</version>
-            </dependency>-->
+            <!--     <dependency>
+                     <groupId>org.apache.activemq</groupId>
+                     <artifactId>activemq-client</artifactId>
+                     <version>5.14.5</version>
+                 </dependency>
+                 <dependency>
+                     <groupId>org.apache.activemq</groupId>
+                     <artifactId>activemq-all</artifactId>
+                     <version>5.13.3</version>
+                 </dependency>-->
 
             <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-activemq -->
             <dependency>
@@ -427,6 +434,22 @@
                     </exclusion>
                 </exclusions>
             </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-all -->
+            <dependency>
+                <groupId>org.hamcrest</groupId>
+                <artifactId>hamcrest-all</artifactId>
+                <version>1.3</version>
+                <scope>test</scope>
+            </dependency>
+            <!-- IO 流开发工具库 -->
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>2.4</version>
+            </dependency>
+
+
         </dependencies>
     </dependencyManagement>
 

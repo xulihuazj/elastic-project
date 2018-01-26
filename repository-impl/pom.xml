@@ -25,6 +25,10 @@
             <groupId>com.xulihuazj</groupId>
             <artifactId>utils</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.xulihuazj</groupId>
+            <artifactId>repository</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>com.github.pagehelper</groupId>

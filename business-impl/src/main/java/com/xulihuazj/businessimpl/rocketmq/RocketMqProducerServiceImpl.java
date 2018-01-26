@@ -47,7 +47,7 @@ public class RocketMqProducerServiceImpl implements RocketMqProducerService {
             SendResult result = defaultMQProducer.send(message);
             LogHelper.info(logger, "结果：{0}", result);
         } catch (MQClientException | RemotingException | MQBrokerException | InterruptedException e) {
-            LogHelper.exception(logger, e, "RocketMq创建消息失败", e);
+            LogHelper.exception(e, logger, "RocketMq创建消息失败");
             e.printStackTrace();
         }
     }
@@ -79,7 +79,7 @@ public class RocketMqProducerServiceImpl implements RocketMqProducerService {
     }
 
     @Override
-    public void setTransanctionMessage(Message message, LocalTransactionExecuter localTransactionExecuter, Map<String, Object> map) {
+    public void setTransactionMessage(Message message, LocalTransactionExecuter localTransactionExecuter, Map<String, Object> map) {
         try {
             //调用原来回调
             TransactionSendResult result = defaultMQProducer.sendMessageInTransaction(message, localTransactionExecuter, map);

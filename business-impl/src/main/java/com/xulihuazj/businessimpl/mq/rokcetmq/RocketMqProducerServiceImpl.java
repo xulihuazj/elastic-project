@@ -18,6 +18,7 @@ import com.xulihuazj.log.LogHelper;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Service;
+import com.google.common.collect.*;
 
 import javax.annotation.Resource;
 import java.util.Map;
@@ -42,13 +43,13 @@ public class RocketMqProducerServiceImpl implements RocketMqProducerService {
             SendResult result = defaultMQProducer.send(message);
             LogHelper.info(logger, "结果：{0}", result);
         } catch (MQClientException | RemotingException | MQBrokerException | InterruptedException e) {
-            LogHelper.exception(logger, e, "RocketMq创建消息失败", e);
+            LogHelper.exception(e, logger, "RocketMq创建消息失败", e);
             e.printStackTrace();
         }
     }
 
     @Override
-    public void setTransanctionMessage(Message message, LocalTransactionExecuter localTransactionExecuter, Map<String, Object> map) {
+    public void setTransactionMessage(Message message, LocalTransactionExecuter localTransactionExecuter, Map<String, Object> map) {
 
     }
 }
