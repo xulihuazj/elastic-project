@@ -4,7 +4,7 @@
  * history :
  *     1. 2018/01/26  14:07 created by xulihua
  */
-package com.xulihuazj.businessimpl.example;
+package com.xulihuazj.businessimpl.example.util;
 
 import org.apache.commons.lang3.ArrayUtils;
 import org.junit.Test;

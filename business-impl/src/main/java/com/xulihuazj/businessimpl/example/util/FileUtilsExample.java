@@ -4,7 +4,7 @@
  * history :
  *     1. 2018/01/26  13:57 created by xulihua
  */
-package com.xulihuazj.businessimpl.example;
+package com.xulihuazj.businessimpl.example.util;
 
 import org.apache.commons.io.FileUtils;
 import org.junit.Test;

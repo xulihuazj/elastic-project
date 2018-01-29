@@ -4,7 +4,7 @@
  * history :
  *     1. 2018/01/26  14:08 created by xulihua
  */
-package com.xulihuazj.businessimpl.example;
+package com.xulihuazj.businessimpl.example.util;
 
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.codec.binary.Hex;

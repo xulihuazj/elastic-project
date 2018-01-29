@@ -4,7 +4,7 @@
  * history :
  *     1. 2018/01/26  14:10 created by xulihua
  */
-package com.xulihuazj.businessimpl.example;
+package com.xulihuazj.businessimpl.example.util;
 
 import com.xulihuazj.model.user.UserInfoModel;
 import org.apache.commons.beanutils.PropertyUtils;

@@ -4,7 +4,7 @@
  * history :
  *     1. 2018/01/26  14:06 created by xulihua
  */
-package com.xulihuazj.businessimpl.example;
+package com.xulihuazj.businessimpl.example.util;
 import org.springframework.util.StringUtils;
 public class StringUtilsFreeworkExample {
 }
