@@ -66,7 +66,7 @@ public class RabbitMqConfig {
             return connectionFactory.newConnection();
         } catch (IOException | TimeoutException e) {
             e.printStackTrace();
-            LogHelper.exception(logger, e, "RabbitMQ实例初始化失败！");
+            LogHelper.exception(e, logger, "RabbitMQ实例初始化失败！");
             throw new RuntimeException(e);
         }
     }
@@ -88,7 +88,7 @@ public class RabbitMqConfig {
             return null;
         } catch (IOException | TimeoutException e) {
             e.printStackTrace();
-            LogHelper.exception(logger, e, "RabbitMQ发送消息失败！");
+            LogHelper.exception(e, logger, "RabbitMQ发送消息失败！");
             throw new RuntimeException(e);
         }
     }

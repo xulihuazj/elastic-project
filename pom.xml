@@ -391,7 +391,7 @@
                 <version>4.3.13.RELEASE</version>
             </dependency>
             <!-- https://mvnrepository.com/artifact/org.apache.activemq/activemq-client -->
-            <!--     <dependency>
+                 <dependency>
                      <groupId>org.apache.activemq</groupId>
                      <artifactId>activemq-client</artifactId>
                      <version>5.14.5</version>
@@ -400,7 +400,7 @@
                      <groupId>org.apache.activemq</groupId>
                      <artifactId>activemq-all</artifactId>
                      <version>5.13.3</version>
-                 </dependency>-->
+                 </dependency>
 
             <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-activemq -->
             <dependency>

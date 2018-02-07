@@ -106,7 +106,7 @@ public class RocketMqConfig {
             LogHelper.info(logger, "消费者实例启动成功!!! producer_groupName:{},topic:{},namesrvAddr:{}", producer_groupName, topic, namesrvAddr);
             return consumer;
         } catch (MQClientException e) {
-            LogHelper.exception(logger, e, "消费者实例开启失败!!! producer_groupName:{},topic:{},namesrvAddr:{}", producer_groupName, topic, namesrvAddr);
+            LogHelper.exception(e, logger, "消费者实例开启失败!!! producer_groupName:{},topic:{},namesrvAddr:{}", producer_groupName, topic, namesrvAddr);
             throw new RuntimeException(e);
         }
     }
